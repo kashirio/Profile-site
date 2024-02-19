@@ -2,26 +2,88 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <link type="image/x-icon" rel="shortcut icon" href="https://th.bing.com/th/id/OIP.3PH0-V_TZeToE4VL05a-QQAAAA?w=234&h=180&c=7&r=0&o=5&pid=1.7">
-        <title>プロフィールサイト</title>
+        <link type="image/x-icon" rel="shortcut icon" href="タイトル画像URL">
+        <title>リュウビ</title>
+        <style>
+            /*
+            右から左へ
+            ----------------------------*/
+            @keyframes infinity-scroll-left {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+
+            /*
+            IE11対策
+            ----------------------------*/
+            _:-ms-lang(x)::-ms-backdrop,
+            .d-demo {
+                display: -ms-grid;
+                overflow: hidden;
+            }
+            /*----------------------------*/
+
+            .d-demo__wrap {
+                display: flex;
+                overflow: hidden;
+            }
+
+            .d-demo__list {
+                display: flex;
+                list-style: none;
+            }
+
+            .d-demo__list--left{
+            animation :infinity-scroll-left 95s infinite linear 0.5s both;
+            }
+
+            .d-demo__item {
+                width: calc(300vw / 6);
+            }
+            .d-demo__item > img{
+                    width: 100%;
+            }
+        </style>
     </head>
     <body style="height: 100%; margin: 0; width: 100%; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: right; background-attachment: fixed;">
-        <h1 style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif; color: #ffffff; background-color: #33ccff;" align="center"><b>プロフィールサイト</b></h1>
-        <h1 style="font-family: serif;" align="center">このサイトについて</h1>
-        <p style="font-family: serif;" align="center">このサイトは、技術科の授業で行った自身のプロフィールサイトを<br>作るということで、できました。</p>
-        <hr style="margin: 0 40px 0 40px; border-top: 3px solid #666666;">
-        <h1 style="font-family: serif;" align="center">プロフィール</h1>
-        <a href="https://www.family.co.jp/goods/friedfoods/0253116.html"><img style="float: left; margin: 0 0 0 15%;" width="200" height="300" src="https://th.bing.com/th/id/OIP.SO9tkO4YQYvcyt-cmPLTJAHaHa?w=174&h=180&c=7&r=0&o=5&pid=1.7" alt="ファミチキ"></a>
-        <a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%A4%E3%83%B3"><img style="float: right; margin: 0 15% 0 0;" width="200" height="300" src="https://th.bing.com/th/id/OIP.2-_L_O9lcehs1RvLGy80rAHaJP?w=181&h=220&c=7&r=0&o=5&pid=1.7" alt="アルベルト・アインシュタイン"></a>
-        <a href="https://www.minecraft.net/ja-jp"><img style="float: right;" width="200" height="300" src="https://th.bing.com/th/id/OIP.kFf9nI7xPWXXfj1hHe6CfgHaNJ?w=115&h=180&c=7&r=0&o=5&pid=1.7" alt="MINECRAFT"></a>
-        <p style="font-family: serif; margin: 0 0 0 30%;">
-            <b>氏名</b><br><ruby>柏原 琉央<rp>(</rp><rt>かしはらりお</rt><rp>)</rp></ruby><br>
-            <b>生年月日</b><br>２００９年１月１７日<br>
-            <b>好きな食べ物</b><br>ファミチキ<br>
-            <b>好きなスポーツ</b><br>バレーボール<br>
-            <b>好きなゲーム</b><br>MINECRAFT<br>
-            <b>好きな人物</b><br>アルベルト・アインシュタイン<br>
-        </p>
+        <h1 style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif; color: #ffffff; background-color: #33ccff;" align="center"><a href="ホームURL" align="left"><img src="会社アイコン画像URL" alt="ホームへ" align="left" width="60" height="40px"></a><b>リュウビ</b></h1>
+        <div class="d-demo">
+            <div class="d-demo__wrap">
+                <ul class="d-demo__list d-demo__list--left" style="margin: 0;">
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.maDJ_Nbn0cbFz0rjAsy6ogHaEo?w=308&h=192&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.AL-y37XLYFlbN5Kd5WGyNwHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.tb2CpCEu-e12SUWkr5DQngHaEo?w=314&h=196&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.8rCFZfwuO6snljRaoLHuogHaEK?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.ClGdfGpS0HaBwIWieW-0QgHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7" alt></li>
+                 </ul>
+                 <ul class="d-demo__list d-demo__list--left">
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.maDJ_Nbn0cbFz0rjAsy6ogHaEo?w=308&h=192&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.AL-y37XLYFlbN5Kd5WGyNwHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.tb2CpCEu-e12SUWkr5DQngHaEo?w=314&h=196&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.8rCFZfwuO6snljRaoLHuogHaEK?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
+                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.ClGdfGpS0HaBwIWieW-0QgHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7" alt></li>
+                 </ul>
+            </div>
+         </div>
+    </body>
+    <body>
+        <h1 style="font-family: serif; color: #666666;" align="center">MENU</h1>
+        <div>
+            <div class="box1">
+                <a href="会社概要URL" align="left"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="left" width="450" height="300px" style="margin: 20px 0 0 20%;"></a>
+            </div>
+            <div>
+                <a href="お問い合わせURL" align="right"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="right" width="450" height="300px" style="margin: 20px 20% 0 0;"></a>
+        </div>
+        <div>
+            <a href="会社概要URL" align="left"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="left" width="450" height="300px" style="margin: 20px 0 0 20%;"></a>
+            <a href="会社概要URL" align="right"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="right" width="450" height="300px" style="margin: 20px 20% 0 0;"></a>
+        </div>
     </body>
 </html>
-
