@@ -3,87 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <link type="image/x-icon" rel="shortcut icon" href="タイトル画像URL">
-        <title>リュウビ</title>
+        <title>リュウビ｜お問い合わせ</title>
         <style>
-            /*
-            右から左へ
-            ----------------------------*/
-            @keyframes infinity-scroll-left {
-                from {
-                    transform: translateX(0);
-                }
-                to {
-                    transform: translateX(-100%);
-                }
+            /* styles.css */
+            .box1 {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                padding: 20px;
             }
 
-            /*
-            IE11対策
-            ----------------------------*/
-            _:-ms-lang(x)::-ms-backdrop,
-            .d-demo {
-                display: -ms-grid;
-                overflow: hidden;
-            }
-            /*----------------------------*/
-
-            .d-demo__wrap {
-                display: flex;
-                overflow: hidden;
+            form {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
-            .d-demo__list {
-                display: flex;
-                list-style: none;
+            label {
+                display: block;
+                margin-bottom: 10px;
             }
 
-            .d-demo__list--left{
-            animation :infinity-scroll-left 95s infinite linear 0.5s both;
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
             }
 
-            .d-demo__item {
-                width: calc(300vw / 6);
-            }
-            .d-demo__item > img{
-                    width: 100%;
+            button {
+                background-color: #007bff;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                cursor: pointer;
             }
         </style>
     </head>
     <body style="height: 100%; margin: 0; width: 100%; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: right; background-attachment: fixed;">
-        <h1 style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif; color: #ffffff; background-color: #33ccff;" align="center"><a href="ホームURL" align="left"><img src="会社アイコン画像URL" alt="ホームへ" align="left" width="60" height="40px"></a><b>リュウビ</b></h1>
-        <div class="d-demo">
-            <div class="d-demo__wrap">
-                <ul class="d-demo__list d-demo__list--left" style="margin: 0;">
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.maDJ_Nbn0cbFz0rjAsy6ogHaEo?w=308&h=192&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.AL-y37XLYFlbN5Kd5WGyNwHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.tb2CpCEu-e12SUWkr5DQngHaEo?w=314&h=196&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.8rCFZfwuO6snljRaoLHuogHaEK?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.ClGdfGpS0HaBwIWieW-0QgHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7" alt></li>
-                 </ul>
-                 <ul class="d-demo__list d-demo__list--left">
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.maDJ_Nbn0cbFz0rjAsy6ogHaEo?w=308&h=192&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.AL-y37XLYFlbN5Kd5WGyNwHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.tb2CpCEu-e12SUWkr5DQngHaEo?w=314&h=196&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.8rCFZfwuO6snljRaoLHuogHaEK?w=266&h=180&c=7&r=0&o=5&pid=1.7" alt></li>
-                    <li class="d-demo__item"><img src="https://th.bing.com/th/id/OIP.ClGdfGpS0HaBwIWieW-0QgHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7" alt></li>
-                 </ul>
-            </div>
-         </div>
+        <h1 style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif; color: #ffffff; background-color: #33ccff;" align="center"><a href="ホームURL" align="left"><img src="会社アイコン画像URL" alt="ホームへ" align="left" width="60" height="40px"></a><b>お問い合わせ</b></h1>
     </body>
-    <body>
-        <h1 style="font-family: serif; color: #666666;" align="center">MENU</h1>
-        <div>
-            <div class="box1">
-                <a href="会社概要URL" align="left"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="left" width="450" height="300px" style="margin: 20px 0 0 20%;"></a>
-            </div>
-            <div>
-                <a href="お問い合わせURL" align="right"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="right" width="450" height="300px" style="margin: 20px 20% 0 0;"></a>
-        </div>
-        <div>
-            <a href="会社概要URL" align="left"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="left" width="450" height="300px" style="margin: 20px 0 0 20%;"></a>
-            <a href="会社概要URL" align="right"><img src="https://th.bing.com/th/id/OIP.QOPPvp00vOSZXJ29Lo1EYAAAAA?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="会社概要" align="right" width="450" height="300px" style="margin: 20px 20% 0 0;"></a>
-        </div>
+    <body class="box1">
+        <h1>お問い合わせフォーム</h1>
+        <form id="contact-form" action="mailto:kashirio17@outlook.jp" method="post">
+            <label for="name">名前：</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">メールアドレス：</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">お問い合わせ内容：</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">送信</button>
+        </form>
+        <script src="script.js"></script>
     </body>
-</html>
