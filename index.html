@@ -48,74 +48,180 @@
                 animation-delay: 16s;
             }
 
+            @media (min-width: 768px) {
+                .box1 {
+                    display: flex;
+                }
+                .box1 > div {
+                    width: 50%;
+                }
 
-            .box1 {
-                display: flex;
-            }
-            .box1 > div {
-                width: 50%;
+                .box2 {
+                    position: relative;
+                }
+
+                .bob {
+                    position: absolute;
+                top: 90%;
+                    left: 40%;
+                    color: #ffffff;
+                    background-color: #ff6633;
+                }
+
+                .bonver {
+                    position: absolute;
+                    top: 90%;
+                    right: 40%;
+                    color: #ffffff;
+                    background-color: #ff6633;
+                }
+
+                .big {
+	                display: inline-block;
+	                padding: 0.3em;
+	                transition: .3s;
+	                transform: scale(1);
+                    width: 300px;
+                    margin: 20px 0 0 20%;
+                    height: auto;
+                    z-index: 1;
+                }
+                .big:hover {
+	                transform: scale(1.05);
+                }
+
+                .bin {
+	                display: inline-block;
+	                padding: 0.3em;
+	                transition: .3s;
+	                transform: scale(1);
+                    width: 300px;
+                    margin: 20px 20% 0 0;
+                    height: auto;
+                    z-index: 1;
+                }
+                .bin:hover {
+	                transform: scale(1.05);
+                }
+
+                .large {
+                    display: inline-block;
+                    padding: 0.3em;
+                    transition: .3s;
+                    transform: scale(1);
+                }
+                .large:hover {
+                    transform: scale(1.05);
+                }
+
+
+                .line {
+                    display: flex;
+                    align-items: center;
+                }
+                .line::before,
+                .line::after {
+                    content: "";
+                    height:2px;
+                    flex-grow: 1;
+                    background-color:#666;
+                }
+                .line:before {
+                    margin-left: 10%;
+                    margin-right: 1%;
+                }
+                .line:after {
+                    margin-left: 1%;
+                    margin-right: 10%;
+                }
             }
 
-            .box2 {
-                position: relative;
-            }
+            @media (min-width: 1280px) {
+                .box1 {
+                    display: flex;
+                }
+                .box1 > div {
+                    width: 50%;
+                }
 
-            .bob {
-                position: absolute;
-                left: 20%;
-                color: 
-                background-color: ;
-            }
+                .box2 {
+                    position: relative;
+                }
 
-            .bonver {
-                position: absolute;
-                right: 20%;
-                color: 
-                background-color: ;
-            }
+                .bob {
+                    position: absolute;
+                    top: 90%;
+                    left: 50%;
+                    color: #ffffff;
+                    background-color: #ff6633;
+                }
 
-            .big {
-	            display: inline-block;
-	            padding: 0.3em;
-	            transition: .3s;
-	            transform: scale(1);
-                width: 300px;
-                height: auto;
-                z-index: 1;
-            }
-            .big:hover {
-	            transform: scale(1.05);
-            }
+                .bonver {
+                    position: absolute;
+                    top: 90%;
+                    right: 49%;
+                    color: #ffffff;
+                    background-color: #ff6633;
+                }
 
-            .large {
-                display: inline-block;
-                padding: 0.3em;
-                transition: .3s;
-                transform: scale(1);
-            }
-            .large:hover {
-                transform: scale(1.05);
-            }
+                .big {
+	                display: inline-block;
+	                padding: 0.3em;
+	                transition: .3s;
+	                transform: scale(1);
+                    width: 300px;
+                    margin: 20px 0 0 40%;
+                    height: auto;
+                    z-index: 1;
+                }
+                .big:hover {
+	                transform: scale(1.05);
+                }
+
+                .bin {
+	                display: inline-block;
+	                padding: 0.3em;
+	                transition: .3s;
+	                transform: scale(1);
+                    width: 300px;
+                    margin: 20px 40% 0 0;
+                    height: auto;
+                    z-index: 1;
+                }
+                .bin:hover {
+	                transform: scale(1.05);
+                }
+
+                .large {
+                    display: inline-block;
+                    padding: 0.3em;
+                    transition: .3s;
+                    transform: scale(1);
+                }
+                .large:hover {
+                    transform: scale(1.05);
+                }
 
 
-            .line {
-                display: flex;
-                align-items: center;
-            }
-            .line::before,
-            .line::after {
-                content: "";
-                height:2px;
-                flex-grow: 1;
-                background-color:#666;
-            }
-            .line:before {
-                margin-left: 10%;
-                margin-right: 1%;
-            }
-            .line:after {
-                margin-left: 1%;
-                margin-right: 10%;
+                .line {
+                    display: flex;
+                    align-items: center;
+                }
+                .line::before,
+                .line::after {
+                    content: "";
+                    height:2px;
+                    flex-grow: 1;
+                    background-color:#666;
+                }
+                .line:before {
+                    margin-left: 10%;
+                    margin-right: 1%;
+                }
+                .line:after {
+                    margin-left: 1%;
+                    margin-right: 10%;
+                }
             }
         </style>
     </head>
@@ -133,23 +239,19 @@
         <h1 style="font-family: serif; color: #666666;" align="center" class="line">MENU</h1>
         <div class="box1">
             <div class="box2">
-                <a href="https://kashirio.github.io/ryuubi-hello/" align="left"><img class="big" src="ご挨拶.png" alt="ご挨拶" align="left" width="60%" height="90%" style="margin: 20px 0 0 20%;"></a>
+                <a href="https://kashirio.github.io/ryuubi-hello/" align="left"><img class="big" src="ご挨拶.png" alt="ご挨拶" align="left" width="60%" height="90%"><h2 class="bob" align="center">　ご挨拶　</h2></a>
             </div>
             <div class="box2">
-                <a href="https://kashirio.github.io/ryuubi-cop/" align="right"><img class="big" src="https://thumb.ac-illust.com/d0/d04d54784c6415c84099136ce3a022a5_t.jpeg" alt="会社概要" align="right" width="60%" height="90%" style="margin: 20px 20% 0 0;"></a>
+                <a href="https://kashirio.github.io/ryuubi-cop/" align="right"><img class="bin" src="https://thumb.ac-illust.com/d0/d04d54784c6415c84099136ce3a022a5_t.jpeg" alt="会社概要" align="right" width="60%" height="90%"><h2 class="bonver" align="center">　会社概要　</h2></a>
             </div>
-        </div>
-        <div style="display: flex;" align="center">
-            <h2 class="bob">ご挨拶</h2>
-            <h2 class="bonver">会社概要</h2>
         </div>
         <h1 style="font-family: serif; color: #666666; margin: 70px 0 0 0;" align="center" class="line">電話でのお問い合わせ</h1>
         <h2 style="font-family: serif; color: #666666; margin: 40px 0 40px 0;" align="center">000-000-0000</h2>
     </body>
     <body style="height: 100%; margin: 0; width: 100%; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: right; background-attachment: fixed;">
         <div style="background-color: #000000;">
-            <h1 class="large" style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif; "><a href="https://kashirio.github.io/ryuubi-hello/" title="GREETINGS" style="text-decoration: none;"><font style="color: #ffffff; margin: 20px 0 20px 20%;"><div style="font-size: xxx-large;">⬡</div><em>ご挨拶</em></font></a></h1>
-            <h1 class="large" style="margin: 0; padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif;"><a href="https://kashirio.github.io/ryuubi-cop/" title="COMPANY" style="text-decoration: none;"><font style="color: #ffffff; margin: 20px 0 20px 20%;"><div style="font-size: xxx-large;">⬡</div><em>会社概要</em></font></a></h1>
+            <h1 class="large" style="padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif;"><a href="https://kashirio.github.io/ryuubi-hello/" title="GREETINGS" style="text-decoration: none;"><font style="color: #ffffff;">⬡<em>ご挨拶</em></font></a></h1>
+            <h1 class="large" style="padding: 0.4em; font-size: 36px; font-weight: normal; font-family: serif;"><a href="https://kashirio.github.io/ryuubi-cop/" title="COMPANY" style="text-decoration: none;"><font style="color: #ffffff;">⬡<em>会社概要</em></font></a></h1>
         </div>
     </body>
 </html>
